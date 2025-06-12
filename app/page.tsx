@@ -18,7 +18,7 @@ const nivelCaracteres = {
 }
 
 // Umbrales de puntos para cada nivel
-const umbrales = [0, 50, 2500, 6000, 12000]
+const umbrales = [0, 1000, 2500, 6000, 12000]
 
 // Mapeo de caracteres a símbolos Hiragana reales
 const hiraganaMap: { [key: string]: string } = {
@@ -128,8 +128,8 @@ export default function HiraganaLearningApp() {
     const progreso = (points - nivelThreshold) / (siguienteThreshold - nivelThreshold)
 
     // Determinar aleatoriamente si usar modo inverso cuando el progreso es >= 50%
-    if (progreso >= 0.2) {
-      setModoInversoActual(Math.random() < 0.7)
+    if (progreso >= 0.5) {
+      setModoInversoActual(Math.random() < 0.5)
     } else {
       setModoInversoActual(false)
     }
