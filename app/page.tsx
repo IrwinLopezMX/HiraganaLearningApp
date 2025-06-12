@@ -18,7 +18,7 @@ const nivelCaracteres = {
 }
 
 // Umbrales de puntos para cada nivel
-const umbrales = [0, 50, 5000, 6000, 12000]
+const umbrales = [0, 50, 1000, 6000, 12000]
 
 // Mapeo de caracteres a símbolos Hiragana reales
 const hiraganaMap: { [key: string]: string } = {
