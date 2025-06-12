@@ -155,7 +155,7 @@ export default function HiraganaLearningApp() {
         let actuales = nivelCaracteres[nivelActual as keyof typeof nivelCaracteres]
 
         if (nivelActual === 2) {
-          const refuerzo = ["sa", "ke", "ko", "i", "se", "so"]
+          const refuerzo = ["ma","mo","ho","ha"]
           actuales = [...actuales, ...refuerzo, ...refuerzo, ...refuerzo] // duplicamos su aparición
         }
 
