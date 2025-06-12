@@ -85,7 +85,7 @@ export default function HiraganaLearningApp() {
 
   const audioRef = useRef<HTMLAudioElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
-  const vocabTimerRef = useRef<NodeJS.Timeout>()
+  const vocabTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   // Obtener nivel actual según puntos
   const obtenerNivelActual = (puntos: number): number => {
